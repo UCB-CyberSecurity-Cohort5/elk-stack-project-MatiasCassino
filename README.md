@@ -196,3 +196,12 @@ Which file do you update to make Ansible run the playbook on a specific machine?
 
 Which URL do you navigate to in order to check that the ELK server is running?
 - http://[public IP address of ELK Server]:5601/app/kibana
+ssh RedAdmin@jump-box-ip-address
+sudo docker pull [name of container] to download container
+sudo docker run -ti [name of container] bash
+sudo docker start [name of container] to start the container
+sudo docker attach to connect to the Ansible container
+Navigate to the /etc/ansible directory
+Nano hosts to configure the IP addresses within the "webserver" and "elk" groups
+Nano ansible.cfg to specify the remote user.
+ansible-playbook [name of playbook]
