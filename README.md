@@ -195,13 +195,25 @@ Which file do you update to make Ansible run the playbook on a specific machine?
 - This can be defined within the Ansible Hosts file. Under the "webservers" grouping, we listed the VM's that will be configured with Filebeat. In addition, within the same file we created an "elk" group to specify the VM that will be configured with the ELK server.
 
 Which URL do you navigate to in order to check that the ELK server is running?
+
 - http://[public IP address of ELK Server]:5601/app/kibana
-ssh RedAdmin@jump-box-ip-address
-sudo docker pull [name of container] to download container
-sudo docker run -ti [name of container] bash
-sudo docker start [name of container] to start the container
-sudo docker attach to connect to the Ansible container
-Navigate to the /etc/ansible directory
-Nano hosts to configure the IP addresses within the "webserver" and "elk" groups
-Nano ansible.cfg to specify the remote user.
+
+As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc
+
+-ssh RedAdmin@jump-box-ip-address
+
+-sudo docker pull [name of container] to download container
+
+-sudo docker run -ti [name of container] bash
+
+-sudo docker start [name of container] to start the container
+
+-sudo docker attach to connect to the Ansible container
+
+-Navigate to the /etc/ansible directory
+
+-Nano hosts to configure the IP addresses within the "webserver" and "elk" groups
+
+-Nano ansible.cfg to specify the remote user.
+
 ansible-playbook [name of playbook]
